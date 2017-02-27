@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<style>
+#jumbo1 {
+  text-align:center;
+  background-color: orange;
+
+}
+
+
+#column{
+  background-color: green;
+  
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron" id="jumbo1">
+            <h1>Ping-Pong </h1></div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+    <h2>Let&#39;s Play!</h2>
+    <h3>Rules </h3>
+    <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+
+    <ol>
+        <li>Numbers divisible by 3 become "ping"</li>
+        <li>Numbers divisible by 5 become "pong"</li>
+        <li>Numbers divisible by both 3 and 5 become "pingpong"</li>
+
+    </ol>
+
+</div>
+                <div class="col-md-4" id="column">
+                    <h2>About Ping Pong</h2>
+                    <p>Created by:</p>
+                    <p>Anthony </p>
+                    <p>Github Username URL:</p>
+                    <p>anthonyshikanga </p>
+                    <p>Level 2 test for:</p>
+                    <p>java </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <form method="post" id="myForm" target="_parent">
+    Enter your number here
+    <input type="number" id="number"><input type="button" value="ping-pong" id="button" onClick="myFunction()" />
+</form>
+
+<script>
+		var i;
+		function myFunction(){
+			var number=document.getElementById("number").value;
+
+			for(i=1;i<=number;i++){
+
+			 if(i % 3 ==0){
+			 	document.write("ping");
+			 }
+
+			 if(i % 5 ==0){
+			 	document.write("pong");
+			 }
+			document.write(i + "<br>");
+			 }
+
+
+
+
+			 }
+
+
+
+	</script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
